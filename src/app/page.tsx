@@ -4,10 +4,16 @@ import SearchInput from '@/components/SearchInput';
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <SearchInput />
-      <CarsFilterOption />
+    <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
+      {/* Hero */}
+      {/* Cars */}
+      {/* About */}
+      {/* Why */}
+      {/* Testimonial */}
+      {/* Cta */}
+      {/* Footer */}
+      {/* BacktoTOpBUtton */}
+      <div className="h-[4000px]"></div>
     </main>
   );
 }

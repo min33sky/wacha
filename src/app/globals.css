@@ -51,6 +51,16 @@
   }
 }
 
+@layer components {
+  .description {
+    @apply text-base xl:text-xl xl:leading-8;
+  }
+
+  .section {
+    @apply w-full h-screen pt-[60px] xl:pt-[120px];
+  }
+}
+
 @layer base {
   html,
   body,

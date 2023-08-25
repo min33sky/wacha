@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import NavBar from '@/components/NavBar';
+import Header from '@/components/Header';
+import SearchProvider from '@/contexts/SearchContext';
 
 export const metadata: Metadata = {
   title: 'Car Rental',
@@ -14,10 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body>
-        <NavBar />
-        {children}
-      </body>
+      <SearchProvider>
+        <body>
+          <Header />
+          {children}
+        </body>
+      </SearchProvider>
     </html>
   );
 }

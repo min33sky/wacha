@@ -8,10 +8,12 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { Button } from './ui/button';
+import { useSearchContext } from '@/contexts/SearchContext';
 
-function NavBar() {
+export default function Header() {
   const [header, setHeader] = useState(false);
   const [nav, setNav] = useState(false);
+  const { setSearchActive } = useSearchContext();
 
   const desktopMode = useMediaQuery({
     query: '(min-width: 300px)',
@@ -24,6 +26,12 @@ function NavBar() {
       } else {
         setHeader(false);
       }
+
+      if (window.scrollY > 800) {
+        setSearchActive(true);
+      } else {
+        setSearchActive(false);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -31,7 +39,7 @@ function NavBar() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [setSearchActive]);
 
   return (
     <header
@@ -113,7 +121,7 @@ function NavBar() {
           </Link>
           <Link
             className="cursor-pointer"
-            to="testimonials"
+            to="testimonial"
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -122,7 +130,7 @@ function NavBar() {
           </Link>
           <Link
             className="cursor-pointer"
-            to="contack"
+            to="contact"
             activeClass="active"
             smooth={desktopMode}
             spy={true}
@@ -145,5 +153,3 @@ function NavBar() {
     </header>
   );
 }
-
-export default NavBar;

@@ -1,7 +1,13 @@
+import CarsFilterOption from '@/components/CarsFilterOption';
+import Hero from '@/components/Hero';
+import SearchInput from '@/components/SearchInput';
+
 export default function Home() {
   return (
     <main>
-      <h1>차 랜 탈</h1>
+      <Hero />
+      <SearchInput />
+      <CarsFilterOption />
     </main>
   );
 }

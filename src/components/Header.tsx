@@ -16,7 +16,7 @@ export default function Header() {
   const { setSearchActive } = useSearchContext();
 
   const desktopMode = useMediaQuery({
-    query: '(min-width: 300px)',
+    query: '(min-width: 1024px)',
   });
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Header() {
     <header
       className={cn(
         'fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300',
-        header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-none py-4',
+        header ? 'bg-black shadow-md py-4' : 'bg-transparent shadow-none py-4',
       )}
     >
       <div className="container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
@@ -56,7 +56,7 @@ export default function Header() {
             spy={true}
             className="cursor-pointer"
           >
-            <Image src={'/icons/logo.svg'} width={194} height={64} alt="logo" />
+            Wacha
           </Link>
 
           {/* Nav Open Menu */}
@@ -77,7 +77,7 @@ export default function Header() {
         {/* Nav */}
         <nav
           className={cn(
-            'flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case',
+            'flex flex-col w-full bg-slate-800 gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case',
             nav
               ? 'max-h-max py-8 px-4 xl:py-8 xl:px-0'
               : 'max-h-0 xl:max-h-max',
@@ -139,7 +139,7 @@ export default function Header() {
           </Link>
 
           <Link
-            className="cursor-pointer max-w-[164px] mx-auto bg-slate-800 text-white"
+            className="cursor-pointer max-w-[164px] mx-auto bg-slate-800 text-red-500"
             to="/"
             activeClass="active"
             smooth={desktopMode}

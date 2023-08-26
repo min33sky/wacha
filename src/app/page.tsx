@@ -9,7 +9,7 @@ import Why from '@/components/Why';
 
 export default function Home() {
   return (
-    <main className="max-w-[1920px] bg-white mx-auto relative overflow-hidden">
+    <main className="max-w-[1920px]  mx-auto relative overflow-hidden">
       <Hero />
       <Cars />
       <About />

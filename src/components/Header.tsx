@@ -5,7 +5,6 @@ import { Link } from 'react-scroll';
 import SearchMobile from './SearchMobile';
 import { useMediaQuery } from 'react-responsive';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { Button } from './ui/button';
 import { useSearchContext } from '@/contexts/SearchContext';

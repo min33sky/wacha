@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main className="max-w-[1920px]  mx-auto relative overflow-hidden">
       <Hero />
-      <Cars />
       <About />
+      <Cars />
       <Why />
       <Testimonial />
       <Contact />

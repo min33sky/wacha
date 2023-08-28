@@ -26,8 +26,7 @@ export default function Hero() {
               }}
               className="text-2xl md:text-4xl xl:text-5xl font-bold mb-4 xl:mb-6"
             >
-              Explore the Finest <span className="text-red-500">Global</span>{' '}
-              Offers
+              최고의 <span className="text-red-500">글로벌</span> 제품 소개
             </motion.h1>
             <motion.p
               variants={fadeIn('down', 0.4)}
@@ -39,8 +38,8 @@ export default function Hero() {
               }}
               className="max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"
             >
-              Find your ideal ride for any adventure with our diverse range of
-              affordable and dependable car rentals.
+              다양한 범위의 저렴하고 신뢰할 수 있는 렌터카를 이용하여 모험을
+              위한 이상적인 승차감을 찾으십시오.
             </motion.p>
 
             <motion.div

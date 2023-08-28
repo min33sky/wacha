@@ -14,7 +14,7 @@ export default function Search() {
   return (
     <div
       className={cn(
-        'hidden xl:block w-full relative shadow-lg bg-slate-800',
+        'hidden xl:block w-full relative shadow-lg bg-slate-800/90',
         searchActive
           ? 'rounded-none xl:h-[85px] px-10 py-2'
           : 'rounded-[20px] py-6 xl:pr-4 xl:h-[98px]',

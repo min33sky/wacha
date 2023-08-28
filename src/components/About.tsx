@@ -17,11 +17,7 @@ export default function About() {
   });
 
   return (
-    <section
-      ref={ref}
-      className="section flex items-center bg-pink-200"
-      id="about"
-    >
+    <section ref={ref} className="section flex items-center" id="about">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:justify-between">
           {/* Image */}
@@ -56,7 +52,7 @@ export default function About() {
                 }}
                 className="text-lg font-bold"
               >
-                Car Services simplified.
+                자동차 서비스가 간소화되었습니다.
               </motion.h2>
               <motion.p
                 variants={fadeIn('up', 0.6)}
@@ -68,9 +64,8 @@ export default function About() {
                 }}
                 className="mb-[42px] max-w-md"
               >
-                Rent, choose, and repair with ease. Our convenient locations,
-                diverse car types, and reliable repair points ensure a seamless
-                car experience.
+                편리한 위치, 다양한 차종, 신뢰할 수 있는 수리점을 통해 원활한
+                자동차 경험을 제공합니다.
               </motion.p>
               {/* stats */}
               <motion.div
@@ -86,39 +81,39 @@ export default function About() {
                 {/* car types */}
                 <div className="flex flex-col w-[100px]">
                   <CarFrontIcon className="w-6 h-6 text-red-500" />
-                  <div className="text-3xl font-black text-black mb-2">
+                  <div className="text-3xl font-black text-white mb-2">
                     {inView ? (
                       <CountUp start={0} end={50} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
-                  <div className="uppercase text-[13px] font-semibold text-slate-800">
+                  <div className="uppercase text-[13px] font-semibold text-slate-200">
                     car <br /> types
                   </div>
                 </div>
                 {/* rental outlets */}
                 <div className="flex flex-col w-[100px]">
                   <CarFrontIcon className="w-6 h-6 text-red-500" />
-                  <div className="text-3xl font-black text-black mb-2">
+                  <div className="text-3xl font-black text-white mb-2">
                     {inView ? (
                       <CountUp start={0} end={135} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
-                  <div className="uppercase text-[13px] font-semibold text-slate-800">
+                  <div className="uppercase text-[13px] font-semibold text-slate-200">
                     rental <br /> outlets
                   </div>
                 </div>
                 {/* repair points */}
                 <div className="flex flex-col w-[100px]">
                   <CarFrontIcon className="w-6 h-6 text-red-500" />
-                  <div className="text-3xl font-black text-black mb-2">
+                  <div className="text-3xl font-black text-white mb-2">
                     {inView ? (
                       <CountUp start={0} end={35} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
-                  <div className="uppercase text-[13px] font-semibold text-slate-800">
+                  <div className="uppercase text-[13px] font-semibold text-slate-200">
                     repair <br /> points
                   </div>
                 </div>
@@ -133,7 +128,7 @@ export default function About() {
                 }}
               >
                 <Button className="hidden xl:block w-full h-1/6 uppercase font-medium ">
-                  See all cars
+                  모든 차량 보기
                 </Button>
               </motion.div>
             </div>

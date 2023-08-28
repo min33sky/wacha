@@ -18,7 +18,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <BackToTopBtn />
-      <div className="h-[4000px]"></div>
+      {/* <div className="h-[4000px]"></div> */}
     </main>
   );
 }
